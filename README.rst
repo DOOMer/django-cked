@@ -19,7 +19,7 @@ or
 
 ::
 
-    pip install -e git+git://github.com/dead23angel/django-cked.git@master
+    pip install -e git+git://github.com/DOOMer/django-cked.git#egg=django-cked
 
 Configuration
 -------------
