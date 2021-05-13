@@ -1,30 +1,15 @@
 # coding: utf8
 from django import forms
 from django.conf import settings
-try:
-    from django.core.urlresolvers import reverse
-except ImportError:
-    from django.urls import reverse
+from django.urls import reverse
 from django.template.loader import render_to_string
-
-try:
-    from django.utils.encoding import force_unicode
-except ImportError:
-    from django.utils.encoding import force_text as force_unicode
-
+from django.utils.encoding import force_text
 from django.utils.html import conditional_escape
 from django.utils.safestring import mark_safe
-
 from django.core.exceptions import ImproperlyConfigured
-try:
-    from django.forms.util import flatatt
-except ImportError:
-    from django.forms.utils import flatatt
+from django.forms.utils import flatatt
 
-try:
-    import json
-except ImportError:
-    from django.utils import simplejson as json
+import json
 
 from cked import default_settings
 
@@ -34,8 +19,8 @@ json_encode = json.JSONEncoder().encode
 
 class CKEditorWidget(forms.Textarea):
     """
-Widget providing CKEditor for Rich Text Editing.
-"""
+    Widget providing CKEditor for Rich Text Editing.
+    """
     class Media:
         js = (settings.STATIC_URL + 'cked/ckeditor/ckeditor.js',)
 
@@ -65,7 +50,7 @@ Widget providing CKEditor for Rich Text Editing.
 
         return mark_safe(render_to_string('cked/ckeditor.html', {
             'final_attrs': flatatt(final_attrs),
-            'value': conditional_escape(force_unicode(value)),
+            'value': conditional_escape(force_text(value)),
             'id': final_attrs['id'],
             'options': json_encode(self.options)})
         )

@@ -24,9 +24,3 @@ class RichTextFormField(forms.fields.Field):
         kwargs.update({'widget': CKEditorWidget()})
         super(RichTextFormField, self).__init__(*args, **kwargs)
 
-# Fix field for South
-try:
-    from south.modelsinspector import add_introspection_rules
-    add_introspection_rules([], ["^cked\.fields\.RichTextField"])
-except:
-    pass
