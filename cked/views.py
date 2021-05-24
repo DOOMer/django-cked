@@ -1,26 +1,16 @@
-# coding: utf8
+
 from django.conf import settings
 from django.http import HttpResponse
 from django.shortcuts import render
 from django.views.decorators.csrf import csrf_exempt
 from django.contrib.auth.decorators import login_required
 from django.core.exceptions import ImproperlyConfigured
-try:
-    from django.core.urlresolvers import reverse
-except ImportError:
-    from django.urls import reverse
+from django.urls import reverse
+import json
 
-from cked import elFinder
-from cked.widgets import json_encode
-from cked import default_settings
-
-try:
-    import json
-except ImportError:
-    from django.utils import simplejson as json
-
-
-json_encode = json.JSONEncoder().encode
+from . import default_settings
+from .elf.connector import Connector
+from .widgets import json_encode
 
 
 @login_required(login_url='/login')
@@ -46,7 +36,8 @@ def elfinder(request):
 @csrf_exempt
 @login_required
 def elfinder_connector(request):
-    elf = elFinder.connector(settings.ELFINDER_OPTIONS)
+    # elf = elFinder.connector(settings.ELFINDER_OPTIONS)
+    elf = Connector(settings.ELFINDER_OPTIONS)
     req = {}
 
     if request.method == 'GET':
@@ -54,7 +45,7 @@ def elfinder_connector(request):
     else:
         form = request.POST
 
-    for field in elf.httpAllowedParameters:
+    for field in elf.http_allowed_params:
         if field in form:
             req[field] = form.get(field)
 
