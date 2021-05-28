@@ -34,8 +34,12 @@
 
       var options = {{ options|safe }};
       options['transport'] = new elFinderSupportVer1();
-      options['getFileCallback'] = function(url) {
-        window.opener.CKEDITOR.tools.callFunction(funcNum, url);
+      {#options['getFileCallback'] = function(url) {#}
+      {#  window.opener.CKEDITOR.tools.callFunction(funcNum, url);#}
+      {#  window.close()#}
+      {#};#}
+      options['getFileCallback'] = function(file, url) {
+        window.opener.CKEDITOR.tools.callFunction(funcNum, file.url);
         window.close()
       };
 
