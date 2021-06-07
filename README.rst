@@ -3,85 +3,42 @@ Django CKEd
 
 **CKEditor and elFinder integration for Django Framework.**
 
-Provides a ``RichTextField`` and ``CKEditorWidget`` with upload and
-browse support.
+Provides a ``RichTextField`` and ``CKEditorWidget`` with upload and browse support.
 
-|CKEditor| |elFinder|
+|CKEditor|
+|elFinder|
 
-Installation
-------------
+.. |CKEditor| image:: https://github.com/DOOMer/django-cked/blob/master/img/ckeditor.jpg
+.. |elFinder| image:: https://github.com/DOOMer/django-cked/blob/master/img/elfinder.jpg
 
-::
 
-    pip install django-cked
+Installation and configuration
+------------------------------
 
-or
+See `setup part`_ in documentation.
 
-::
-
-    pip install -e git+git://github.com/DOOMer/django-cked.git#egg=django-cked
-
-Configuration
--------------
-
-Add ``cked`` to your ``INSTALLED_APPS`` setting.
-
-Then set ``ELFINDER_OPTIONS`` in your settings:
-
-::
-
-    ELFINDER_OPTIONS = {
-        ## required options
-        'root': os.path.join(PROJECT_ROOT, 'media', 'uploads'),
-        'URL': '/media/uploads/',
-    }
-
-And add CKEd URL include to your project ``urls.py`` file:
-
-::
-
-    url(r'^cked/', include('cked.urls')),
-
-Settings
---------
-
--  **CKEDITOR\_OPTIONS**: CKEditor config. See
-   http://docs.ckeditor.com/#!/guide/dev_configuration
--  **ELFINDER\_OPTIONS**: elFinder config. See
-   https://github.com/Studio-42/elFinder/wiki/Client-configuration-options
+.. _setup part: docs/setup.rst
 
 Usage
 -----
 
-Model field
-~~~~~~~~~~~
+See `usage part`_ in documentation.
 
-::
+.. _usage part: docs/usage.rst
 
-    from django.db import models
-    from cked.fields import RichTextField
+Authors
+-------
+
+See `authors link`_ in documentation.
+
+.. _authors link: AUTHORS.rst
 
 
-    class Entry(models.Model):
-        text = RichTextField()
+License
+-------
 
-Widget
-~~~~~~
+Licensed under BSD license. See `license link`_ in documentation.
 
-::
+.. _license link: LICENSE.rst
 
-    from django import forms
-    from cked.widgets import CKEditorWidget
 
-    class MyForm(forms.Form):
-        text = forms.CharField(widget=CKEditorWidget)
-
-**NOTE**: If you are using custom forms, dont'r forget to include form
-media to your template:
-
-::
-
-    {{ form.media }}
-
-.. |CKEditor| image:: https://github.com/dead23angel/django-cked/blob/master/img/ckeditor.jpg
-.. |elFinder| image:: https://github.com/dead23angel/django-cked/blob/master/img/elfinder.jpg
