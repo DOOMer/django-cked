@@ -7,5 +7,5 @@ CKEDITOR_DEFAULT_OPTIONS = {
     'preset': 'full',
     'filebrowserWindowWidth': 940,
     'filebrowserWindowHeight': 450,
-    'language': 'ru',
+    'language': 'en',
 }
