@@ -3,12 +3,24 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to django-cked's documentation!
-=======================================
+django-cked
+===========
 
 **CKEditor and elFinder integration for Django Framework.**
 
 Provides a ``RichTextField`` and ``CKEditorWidget`` with upload and browse support.
+
+.. figure:: _static/img/ckeditor.jpg
+      :align: center
+      :alt: CKEditor widget
+
+      CKEditor widget
+
+.. figure:: _static/img/elfinder.jpg
+      :align: center
+      :alt: elFinder widget
+
+      elFinder widget
 
 .. toctree::
    :maxdepth: 2

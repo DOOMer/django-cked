@@ -18,8 +18,8 @@ import sphinx_rtd_theme
 # -- Project information -----------------------------------------------------
 
 project = 'django-cked'
-copyright = '2021, DOOMer'
-author = 'DOOMer'
+copyright = "2021 Artem 'DOOMer' Galichkin, 2014 Ivan Gorochov, 2013 Svyatoslav Bulbakha"
+author = "Artem Galichkin"
 
 # The full version, including alpha/beta/rc tags
 release = '2.0'
