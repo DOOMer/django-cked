@@ -5,13 +5,13 @@ Django CKEd
 
 Provides a ``RichTextField`` and ``CKEditorWidget`` with upload and browse support.
 
-.. figure:: _static/img/ckeditor.jpg
+.. figure:: docs/_static/img/ckeditor.jpg
       :align: center
       :alt: CKEditor widget
 
       CKEditor widget
 
-.. figure:: _static/img/elfinder.jpg
+.. figure:: docs/_static/img/elfinder.jpg
       :align: center
       :alt: elFinder widget
 
