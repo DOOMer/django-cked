@@ -1,0 +1,32 @@
+[tool]
+[tool.poetry]
+name = "django-cked"
+version = "0.1.4"
+description = "CKEditor and elFinder integration for Django Framework."
+packages = [ { include = "cked", from = "src" } ]
+license = "BSD"
+keywords = ["django", "ckeditor", "elfinder", "wysiwyg", "upload"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: Unix",
+    "Environment :: Web Environment",
+    "Framework :: Django",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.6",
+    "Topic :: Software Development :: Libraries :: Python Modules"
+]
+homepage = "https://github.com/DOOMer/django-cked"
+repository = "https://github.com/DOOMer/django-cked"
+authors = ["Artem Galichkin <doomer3d@gmail.com>"]
+maintainers = ["Artem Galichkin <doomer3d@gmail.com>"]
+readme = "README.rst"
+documentation = "https://django-cked.readthedocs.io/"
+include = ["AUTHORS.rst", "CHANGES"]
+
+[tool.poetry.dependencies]
+python = ">=3.6"
+django = ">=2.2"
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/DOOMer/django-cked/issues"
