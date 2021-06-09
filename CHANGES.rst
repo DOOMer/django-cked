@@ -3,40 +3,41 @@ Version history
 
 Current
 
-- Update elFinder to 2.0.9
+- Updated elFinder to 2.0.9
 - Refactor elFinder connector to Python 3.6+ and Django 2.2+
-- Update CKEditor to 4.16.0
-- Change default settings for CKEditor skin from "bootstrapck" to "moono-lisa"
+- Updated CKEditor to 4.16.0
+- Changed default settings for CKEditor skin from "bootstrapck" to "moono-lisa"
 - Drop older Django versions (<2.1) support
+- Changed the default value of CKEDITOR_DEFAULT_OPTIONS from 'ru' to 'en'
 
 v0.1.1
 
-- Support Dajngo 1.9
+- Added support Dajngo 1.9
 
 v0.1.0
 
-- Update CKEd
+- Updated CKEditor
 
 v0.0.9
 
-- Fix some bugs.
-- Support Python 2.7 + 3.4 and Django 1.7
+- Fixed some bugs.
+- Added support Python 2.7 + 3.4 and Django 1.7
 
 v0.0.8
 
-- Fix some bugs.
+- Fixed some bugs.
 
 v0.0.4
 
-- Add the MANIFEST file.
+- Added the MANIFEST file.
 
 v0.0.3
 
-- Fix CKED_UPLOAD_PATH setting.
+- Fixed CKED_UPLOAD_PATH setting.
 
 v0.0.2
 
-- Fix README file for pypi.python.org
+- Fixed README file for pypi.python.org
 
 v0.0.1
 
