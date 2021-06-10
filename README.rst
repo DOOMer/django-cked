@@ -17,6 +17,7 @@ Provides a ``RichTextField`` and ``CKEditorWidget`` with upload and browse suppo
 
       elFinder widget
 
+**django-cked** works with Django 2.2+ and Python 3.6+
 
 Installation and configuration
 ------------------------------
