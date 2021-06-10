@@ -23,14 +23,14 @@ Installation and configuration
 
 See `setup part`_ in documentation.
 
-.. _setup part: docs/setup.rst
+.. _setup part: https://django-cked.readthedocs.io/en/latest/setup.html
 
 Usage
 -----
 
 See `usage part`_ in documentation.
 
-.. _usage part: docs/usage.rst
+.. _usage part: https://django-cked.readthedocs.io/en/latest/usage.html
 
 Authors
 -------
