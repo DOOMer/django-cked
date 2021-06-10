@@ -1,7 +1,7 @@
 Version history
 ===============
 
-Current
+v2.0.0
 
 - Updated elFinder to 2.0.9
 - Refactor elFinder connector to Python 3.6+ and Django 2.2+

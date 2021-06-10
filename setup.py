@@ -113,9 +113,9 @@ install_requires = \
 
 setup_kwargs = {
     'name': 'django-cked',
-    'version': '0.1.4',
+    'version': '2.0.0',
     'description': 'CKEditor and elFinder integration for Django Framework.',
-    'long_description': 'Django CKEd\n===========\n\n**CKEditor and elFinder integration for Django Framework.**\n\nProvides a ``RichTextField`` and ``CKEditorWidget`` with upload and browse support.\n\n.. figure:: docs/_static/img/ckeditor.jpg\n      :align: center\n      :alt: CKEditor widget\n\n      CKEditor widget\n\n.. figure:: docs/_static/img/elfinder.jpg\n      :align: center\n      :alt: elFinder widget\n\n      elFinder widget\n\n\nInstallation and configuration\n------------------------------\n\nSee `setup part`_ in documentation.\n\n.. _setup part: docs/setup.rst\n\nUsage\n-----\n\nSee `usage part`_ in documentation.\n\n.. _usage part: docs/usage.rst\n\nAuthors\n-------\n\nSee `authors link`_ in documentation.\n\n.. _authors link: AUTHORS.rst\n\n\nLicense\n-------\n\nLicensed under BSD license. See `license link`_ in documentation.\n\n.. _license link: LICENSE.rst\n\n\n',
+    'long_description': 'Django CKEd\n===========\n\n**CKEditor and elFinder integration for Django Framework.**\n\nProvides a ``RichTextField`` and ``CKEditorWidget`` with upload and browse support.\n\n.. figure:: docs/_static/img/ckeditor.jpg\n      :align: center\n      :alt: CKEditor widget\n\n      CKEditor widget\n\n.. figure:: docs/_static/img/elfinder.jpg\n      :align: center\n      :alt: elFinder widget\n\n      elFinder widget\n\n**django-cked** works with Django 2.2+ and Python 3.6+\n\nInstallation and configuration\n------------------------------\n\nSee `setup part`_ in documentation.\n\n.. _setup part: https://django-cked.readthedocs.io/en/latest/setup.html\n\nUsage\n-----\n\nSee `usage part`_ in documentation.\n\n.. _usage part: https://django-cked.readthedocs.io/en/latest/usage.html\n\nAuthors\n-------\n\nSee `authors link`_ in documentation.\n\n.. _authors link: AUTHORS.rst\n\n\nLicense\n-------\n\nLicensed under BSD license. See `license link`_ in documentation.\n\n.. _license link: LICENSE.rst\n\n\n',
     'author': 'Artem Galichkin',
     'author_email': 'doomer3d@gmail.com',
     'maintainer': 'Artem Galichkin',

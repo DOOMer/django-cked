@@ -22,7 +22,7 @@ copyright = "2021 Artem 'DOOMer' Galichkin, 2014 Ivan Gorochov, 2013 Svyatoslav 
 author = "Artem Galichkin"
 
 # The full version, including alpha/beta/rc tags
-release = '2.0'
+release = '2.0.0'
 
 
 # -- General configuration ---------------------------------------------------
