@@ -8,11 +8,11 @@ Installation
 
     pip install django-cked
 
-or
+or (for install current unstable version from Git repo)
 
 ::
 
-    pip install -e git+git://github.com/DOOMer/django-cked.git
+    pip install git+https://github.com/DOOMer/django-cked.git
 
 Configuration
 -------------
