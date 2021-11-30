@@ -1,6 +1,3 @@
-
-# This file is generated automatically.
-# !!! DO NOT MODIFY !!!.
 # -*- coding: utf-8 -*-
 from setuptools import setup
 
@@ -27,6 +24,11 @@ package_data = \
           'static/cked/ckeditor/plugins/dialog/*',
           'static/cked/ckeditor/plugins/dialog/styles/*',
           'static/cked/ckeditor/plugins/div/dialogs/*',
+          'static/cked/ckeditor/plugins/exportpdf/*',
+          'static/cked/ckeditor/plugins/exportpdf/tests/*',
+          'static/cked/ckeditor/plugins/exportpdf/tests/_helpers/*',
+          'static/cked/ckeditor/plugins/exportpdf/tests/manual/*',
+          'static/cked/ckeditor/plugins/exportpdf/tests/manual/integrations/*',
           'static/cked/ckeditor/plugins/find/dialogs/*',
           'static/cked/ckeditor/plugins/flash/dialogs/*',
           'static/cked/ckeditor/plugins/flash/images/*',
@@ -61,6 +63,7 @@ package_data = \
           'static/cked/ckeditor/plugins/table/dialogs/*',
           'static/cked/ckeditor/plugins/tableselection/styles/*',
           'static/cked/ckeditor/plugins/tabletools/dialogs/*',
+          'static/cked/ckeditor/plugins/templates/*',
           'static/cked/ckeditor/plugins/templates/dialogs/*',
           'static/cked/ckeditor/plugins/templates/templates/*',
           'static/cked/ckeditor/plugins/templates/templates/images/*',
@@ -113,7 +116,7 @@ install_requires = \
 
 setup_kwargs = {
     'name': 'django-cked',
-    'version': '2.0.0',
+    'version': '2.0.1',
     'description': 'CKEditor and elFinder integration for Django Framework.',
     'long_description': 'Django CKEd\n===========\n\n**CKEditor and elFinder integration for Django Framework.**\n\nProvides a ``RichTextField`` and ``CKEditorWidget`` with upload and browse support.\n\n.. figure:: docs/_static/img/ckeditor.jpg\n      :align: center\n      :alt: CKEditor widget\n\n      CKEditor widget\n\n.. figure:: docs/_static/img/elfinder.jpg\n      :align: center\n      :alt: elFinder widget\n\n      elFinder widget\n\n**django-cked** works with Django 2.2+ and Python 3.6+\n\nInstallation and configuration\n------------------------------\n\nSee `setup part`_ in documentation.\n\n.. _setup part: https://django-cked.readthedocs.io/en/latest/setup.html\n\nUsage\n-----\n\nSee `usage part`_ in documentation.\n\n.. _usage part: https://django-cked.readthedocs.io/en/latest/usage.html\n\nAuthors\n-------\n\nSee `authors link`_ in documentation.\n\n.. _authors link: AUTHORS.rst\n\n\nLicense\n-------\n\nLicensed under BSD license. See `license link`_ in documentation.\n\n.. _license link: LICENSE.rst\n\n\n',
     'author': 'Artem Galichkin',
@@ -130,4 +133,3 @@ setup_kwargs = {
 
 
 setup(**setup_kwargs)
-

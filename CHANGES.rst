@@ -1,6 +1,10 @@
 Version history
 ===============
 
+v2.0.1
+
+- Updated CKEditor to 4.17.1
+
 v2.0.0
 
 - Updated elFinder to 2.0.9
