@@ -3,7 +3,12 @@ from django import forms
 from django.conf import settings
 from django.urls import reverse
 from django.template.loader import render_to_string
-from django.utils.encoding import force_text
+
+try:
+    from django.utils.encoding import force_text  # django < 4.0
+except ImportError:
+    from django.utils.encoding import force_str as force_text  # django 4.0+
+
 from django.utils.html import conditional_escape
 from django.utils.safestring import mark_safe
 from django.core.exceptions import ImproperlyConfigured
