@@ -1,6 +1,10 @@
 Version history
 ===============
 
+v2.0.2
+
+- Add support Django 4.0
+
 v2.0.1
 
 - Updated CKEditor to 4.17.1

@@ -1,7 +1,7 @@
 [tool]
 [tool.poetry]
 name = "django-cked"
-version = "2.0.1"
+version = "2.0.2"
 description = "CKEditor and elFinder integration for Django Framework."
 packages = [ { include = "cked", from = "src" } ]
 license = "BSD"
