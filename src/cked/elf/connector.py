@@ -127,6 +127,11 @@ class Connector:
             self._options['URL'] = f"/{self._options['URL']}"
 
         self._options['root'] = self._check_utf8(self._options['root'])
+
+        root_path = Path(self._options['root'])
+        if not root_path.exists():
+            root_path.mkdir()
+
         self._debug('URL', self._options['URL'])
         self._debug('root', self._options['root'])
 
