@@ -8,14 +8,14 @@ from django.core.exceptions import ImproperlyConfigured
 from django.urls import reverse
 import json
 
-from . import default_settings
+from .conf import ELFINDER_DEFAULT_OPTIONS
 from .elf.connector import Connector
 from .widgets import json_encode
 
 
 @login_required(login_url='/login')
 def elfinder(request):
-    options = default_settings.ELFINDER_DEFAULT_OPTIONS.copy()
+    options = ELFINDER_DEFAULT_OPTIONS.copy()
     options['url'] = reverse('cked_elfinder_connector')
 
     user_options = getattr(settings, 'ELFINDER_OPTIONS', None)

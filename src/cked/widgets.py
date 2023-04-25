@@ -16,7 +16,7 @@ from django.forms.utils import flatatt
 
 import json
 
-from cked import default_settings
+from .conf import CKEDITOR_DEFAULT_OPTIONS
 
 
 json_encode = json.JSONEncoder().encode
@@ -32,7 +32,7 @@ class CKEditorWidget(forms.Textarea):
     def __init__(self, *args, **kwargs):
         super(CKEditorWidget, self).__init__(*args, **kwargs)
         # Use default config
-        self.options = default_settings.CKEDITOR_DEFAULT_OPTIONS.copy()
+        self.options = CKEDITOR_DEFAULT_OPTIONS.copy()
 
         # If CKEDITOR_OPTIONS presented in settings, use it!
         options = getattr(settings, 'CKEDITOR_OPTIONS', None)
