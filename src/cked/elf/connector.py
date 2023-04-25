@@ -121,6 +121,11 @@ class Connector:
 
         # print(self._options)
         self._options['URL'] = self._check_utf8(self._options['URL']).rstrip('/')
+
+        # relative url to MEDIA should start with '/'
+        if not self._options['URL'].startswith('/'):
+            self._options['URL'] = f"/{self._options['URL']}"
+
         self._options['root'] = self._check_utf8(self._options['root'])
         self._debug('URL', self._options['URL'])
         self._debug('root', self._options['root'])
